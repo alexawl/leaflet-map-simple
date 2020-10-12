@@ -21,7 +21,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">Higher Ed in Hartford Region</div>
+  <div id="map-title">Hollywood, Street by Streets</div>
   <div id="map"></div>
 
   <!-- Create the map content with JavaScript (.js) -->
@@ -53,13 +53,13 @@
   controlLayers.addBaseLayer(terrain, 'Stamen Terrain basemap');
 
   /* Display a point marker with pop-up text */
-  L.marker([26.01, -80.16]).addTo(map) // EDIT latitude, longitude to re-position marker
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+//   L.marker([26.01, -80.16]).addTo(map) // EDIT latitude, longitude to re-position marker
+//   .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
 
-  </script>
+ 
 </body>
 </html>
-// .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+ .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
 
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
   var customLayer = L.geoJson(null, {
