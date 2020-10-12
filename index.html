@@ -31,6 +31,12 @@
     zoom: 12,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false
       }); .addTo(map);
+    
+    /* Control panel to display map layers */
+    var controlLayer = L.control.layers( nul, null,{
+      position: "topright",
+      collapsed: false
+      )} .addTp(map);
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
